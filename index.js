@@ -23,7 +23,7 @@ function red()
 }
 function thankYou()
 {
-  document.querySelector(".row").style.display = 'none';
+  document.querySelector(".container").style.display = 'none';
   document.querySelector(".thankYou").style.visibility = 'visible';
 }
 function checkMail() {

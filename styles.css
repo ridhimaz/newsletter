@@ -7,17 +7,14 @@
 body{
     background-color:hsl(234, 29%, 20%);
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-   
-  
-   
+    font-size: 16px;   
 }
 h1{
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
 }
 .container{
-    
+    /* display:none; */
  padding:10vw ;
  margin:auto ;
 }
@@ -36,6 +33,7 @@ h1{
 .item1{
   
     padding:5vw;
+   
 }
 
 #small-black{
@@ -80,22 +78,29 @@ h1{
 }
 #thankYou-btn{
  margin-top: 0;
+ width:100%;
  
  
 }
+
 .thankYou{
     visibility: hidden;
     margin: auto;
     display:flex;
+    margin-top: 10vh;
+    justify-content: center;
     flex-direction:column ;
     height:50%;
-    width:50%;
-    padding: 50px;
+    width:45%;
+    text-align: left;
+    padding: 4% 3%;
+    align-items: start;
     background-color: #fff;   
-    border-radius: 7%;
+    border-radius: 3%;
 }
 
 .news{
+   
     margin-top: 10vh;
     overflow: hidden;
 }
@@ -119,13 +124,18 @@ h1{
 }
 @media only screen and (max-width:800px) {
     body {
-     
+     background-color: #fff;
       font-size: small;
-      display: flex;
-      /* text-align: center; */
-      align-items: center;
+    
     }
-   
+  
+    /* .thankYou{
+        /* margin: 0;
+        padding: 0; */
+        /* width:100%;
+        height:100%;
+    } */
+    */
     .news{
         margin-top: 10px;
         grid-area: 1/1/span 1/span 2;
@@ -142,15 +152,16 @@ h1{
     #exampleInputEmail1{
        width:90%;
     }
+    #thankYou-btn{
+        /* font-size: medium; */
+        padding:2vw;
+    }
     .thankYou{
-        margin: auto;
-        display:flex;
-        flex-direction:column ;
-        height:100%;
-        width:70%;
-        padding: 50px;
-        background-color: #fff;   
-        border-radius: 7%;
+       font-size: large;
+       padding: 10%;
+        width:100%; 
+        
+       
     }
     #mailBtn{
       width:90%;
