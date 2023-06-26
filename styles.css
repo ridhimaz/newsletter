@@ -15,8 +15,9 @@ h1{
 }
 .container{
     /* display:none; */
- padding:10vw ;
- margin:auto ;
+
+    margin:auto;
+    margin-bottom:5vw ;
 }
 .rowf{
    margin-top:50px;
@@ -33,6 +34,7 @@ h1{
 .item1{
   
     padding:5vw;
+    margin-bottom: 2vw;
    
 }
 
@@ -69,7 +71,7 @@ h1{
     
 }
 #thankYou-fa{
-    font-size: 3em; /*size whatever you like*/
+    font-size: 3rem; /*size whatever you like*/
     
 }
 #bold{
@@ -79,38 +81,42 @@ h1{
 #thankYou-btn{
  margin-top: 0;
  width:100%;
- 
- 
 }
 
 .thankYou{
+    padding: 5%;
     visibility: hidden;
     margin: auto;
     display:flex;
     margin-top: 10vh;
-    justify-content: center;
     flex-direction:column ;
     height:50%;
-    width:45%;
     text-align: left;
-    padding: 4% 3%;
+    align-items: center;
+    margin: 5vw 12vw;
     align-items: start;
     background-color: #fff;   
-    border-radius: 3%;
+    border-radius:2%;
 }
 
 .news{
-   
-    margin-top: 10vh;
+    padding:5vw;
     overflow: hidden;
+    position: relative;
+    margin-bottom: 2vw;
 }
 #newsletter{
   
    border-radius:3%;
-   width:85%;
+   width:70%;
+   
+   /* border:2px solid red; */
+   margin-right: 5vw;;
+   position: absolute;
+    margin-bottom: 7vh;
    /* margin-top: 12vh; */
-   margin-bottom: 7vh;
-   margin-left: 0;
+   /* margin-bottom: 7vh;
+   margin-left: 0; */
    
    
 }
@@ -122,46 +128,47 @@ h1{
     font-size: small;
     font-weight: bolder;
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1000px) {
     body {
      background-color: #fff;
-      font-size: small;
-    
+      
     }
-  
-    /* .thankYou{
-        /* margin: 0;
-        padding: 0; */
-        /* width:100%;
-        height:100%;
-    } */
-    */
+   .container{
+    width:100%; 
+   }
     .news{
-        margin-top: 10px;
-        grid-area: 1/1/span 1/span 2;
+        
         padding: 0;
+        height:45vw;
         overflow: hidden;
     }
     #newsletter{
         overflow: hidden;
         width: 100%;
-        height:50vw;
+      
         margin: 0;
         border-radius: 0;
     }
     #exampleInputEmail1{
        width:90%;
     }
-    #thankYou-btn{
-        /* font-size: medium; */
-        padding:2vw;
-    }
+   
     .thankYou{
-       font-size: large;
-       padding: 10%;
-        width:100%; 
-        
-       
+        font-size: large;
+        padding: 10%;
+         width:100%; 
+        visibility: hidden;
+        margin: auto;
+        display:flex;
+        margin-top: 10vh;
+        flex-direction:column ;
+        height:50%;
+        text-align: left;
+        align-items: center;
+        /* margin: 5vw 12vw; */
+        align-items: start;
+        background-color: #fff;   
+        border-radius:2%;
     }
     #mailBtn{
       width:90%;
