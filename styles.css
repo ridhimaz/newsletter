@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Space+Grotesk:wght@500&display=swap');
 
-/* html {
-    min-width: 100%;
-    max-height: -10%;
-  } */
+
 body{
     background-color:hsl(234, 29%, 20%);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;   
+}
+*{
+    margin:0;
+    padding:0;
 }
 h1{
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
 }
 .container{
-    /* display:none; */
+   
+ 
+ margin: 2% auto;
+ width:70vw;
 
-    margin:auto;
-    margin-bottom:5vw ;
 }
 .rowf{
-   margin-top:50px;
-   padding: 0%;
     border-radius:2.5%;
     background-color: #fff;
     
@@ -34,8 +34,7 @@ h1{
 .item1{
   
     padding:5vw;
-    margin-bottom: 2vw;
-   
+    margin-bottom:0;
 }
 
 #small-black{
@@ -85,9 +84,8 @@ h1{
 
 .thankYou{
     padding: 5%;
-    visibility: hidden;
     margin: auto;
-    display:flex;
+    display:none;
     margin-top: 10vh;
     flex-direction:column ;
     height:50%;
@@ -104,20 +102,16 @@ h1{
     overflow: hidden;
     position: relative;
     margin-bottom: 2vw;
+   
+   
 }
 #newsletter{
-  
-   border-radius:3%;
-   width:70%;
    
-   /* border:2px solid red; */
-   margin-right: 5vw;;
+   border-radius:3%;
+   width:75%;
+   height: 100%;
    position: absolute;
     margin-bottom: 7vh;
-   /* margin-top: 12vh; */
-   /* margin-bottom: 7vh;
-   margin-left: 0; */
-   
    
 }
 .btn-primary{
@@ -131,43 +125,36 @@ h1{
 @media only screen and (max-width:1000px) {
     body {
      background-color: #fff;
-      
+      font-size: 2rem;
     }
-   .container{
-    width:100%; 
-   }
+ 
     .news{
         
         padding: 0;
+        margin: 0;
         height:45vw;
         overflow: hidden;
     }
     #newsletter{
         overflow: hidden;
         width: 100%;
-      
+        padding:0vw;
         margin: 0;
         border-radius: 0;
     }
     #exampleInputEmail1{
        width:90%;
     }
+
    
     .thankYou{
-        font-size: large;
+      
         padding: 10%;
-         width:100%; 
-        visibility: hidden;
         margin: auto;
-        display:flex;
         margin-top: 10vh;
-        flex-direction:column ;
         height:50%;
         text-align: left;
-        align-items: center;
-        /* margin: 5vw 12vw; */
-        align-items: start;
-        background-color: #fff;   
+        align-items: start;  
         border-radius:2%;
     }
     #mailBtn{
@@ -183,3 +170,4 @@ h1{
     }
     
   }
+  
